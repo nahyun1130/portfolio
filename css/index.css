@@ -1,0 +1,177 @@
+@charset 'utf-8';
+
+/* main */
+.heart {
+    position: absolute;
+    top: 30%;
+    width: 100%;
+    height: 50%;
+    background: url('../image/heart.png')no-repeat;
+    overflow: hidden;
+}
+.heart::after {
+    content: '';
+    position: absolute;
+    width: 1800px;
+    height: 400px;
+    background-color: #000;
+    animation: heart 5s infinite;
+}
+@keyframes heart {
+    0%{left: 30px;}
+    100%{left: 100%;}
+}
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+main .inner {}
+main .vendingms {
+    width: 700px;
+    height: 100vh;
+    margin: 0 auto;
+    padding-top: 100px;
+}
+main .vendingms .vendingbg {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    background: url('../image/vendingBG.png')no-repeat center bottom/contain;
+}
+.vendingbg .vendingitem {
+    position: absolute;
+    top: 130px;
+    width: 700px;
+    height: 350px;
+    background: url('../image/vendingIN.png')no-repeat center/contain;
+   
+}
+.vendingitem .items {
+    position: absolute;
+    width: 480px;
+    height: 350px;
+    left: 125px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+.vendingitem .item1 {
+    background: url('../image/item1.png')no-repeat;
+    width: 120px;
+    height: 100px;
+}
+.vendingitem .item2 {
+    background: url('../image/item2.png')no-repeat;
+    width: 120px;
+    height: 100px;
+}
+.vendingitem .item3 {
+    background: url('../image/item3.png')no-repeat;
+    width: 120px;
+    height: 100px;
+}
+.vendingitem .item4 {
+    background: url('../image/item4.png')no-repeat;
+    width: 120px;
+    height: 100px;
+}
+.vendingitem .item5 {
+    background: url('../image/item5.png')no-repeat;
+    width: 120px;
+    height: 100px;
+}
+.vendingitem .item6 {
+    background: url('../image/item6.png')no-repeat;
+    width: 120px;
+    height: 100px;
+}
+.vendingitem .item7 {
+    background: url('../image/item7.png')no-repeat;
+    width: 120px;
+    height: 100px;
+}
+.vendingitem .item8 {
+    background: url('../image/item8.png')no-repeat;
+    width: 120px;
+    height: 100px;
+}
+.vendingitem .items li {
+    opacity: .7;
+}
+.vendingitem .items li:hover {
+    opacity: 1;
+}
+.vendingbg .vendingcash {
+    position: absolute;
+    top: 500px;
+    left: 50px; 
+    width: 600px;
+    height: 85px;
+    background: url('../image/cash.png') no-repeat center/contain;
+}
+.vendingbg .vendingpf a {
+    font-family: 'inkfree';
+    position: absolute;
+    display: block;
+    top: 507px; left: 100px;
+    width: 300px;
+    height: 70px;
+    line-height: 40px;
+    font-size: 40px;
+    color: #fff;
+    border: 7px solid #fff;
+    padding: 10px 20px;
+    border-radius: 20px;
+    background-color: #9b0000;
+    transition: all .3s;
+}
+.vendingbg .vendingpf:hover a {
+    transform: scale(1.1);
+}
+.vendingbg .vendingposter {}
+.vendingbg .vendingposter .poster1 {
+    width: 200px;
+    height: 200px;
+    background: url('../image/poster1.png')no-repeat;
+    position: absolute;
+    bottom: 53px; left: 80px;
+    transition: transform .3s;
+    font-size: 0;
+    text-indent: -9999px;
+}
+.vendingbg .vendingposter .poster1:hover {
+    transform: scale(1.1);
+    z-index: 99;
+}
+.vendingbg .vendingposter .poster2 {
+    width: 200px;
+    height: 200px;
+    background: url('../image/poster2.png')no-repeat;
+    position: absolute;
+    bottom: 8px; left: 200px;
+    transform: scale(0.9);
+    transition: transform .3s;
+    font-size: 0;
+    text-indent: -9999px;
+}
+.vendingbg .vendingposter .poster2:hover {
+    transform: scale(1);
+}
+.vendingbg .vendingposter .poster3 {
+    width: 200px;
+    height: 200px;
+    background: url('../image/poster3.png')no-repeat right;
+    position: absolute;
+    bottom: 50px; right: 45px;
+    transition: all .3s;
+    overflow: hidden;
+    transition: transform .3s;
+    font-size: 0;
+    text-indent: -9999px;
+}
+.vendingbg .vendingposter .poster3:hover {
+    right: 55px;
+    transform: scale(1.1);
+}

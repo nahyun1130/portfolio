@@ -1,0 +1,176 @@
+@charset 'utf-8';
+
+main {
+    width: 100%;
+    height: 100vh;
+    background-color: #000;
+}
+
+.about-title img {
+    padding-top: 150px;
+    padding-left: 40px;
+    width: 250px;
+}
+.camera {
+    position: absolute;
+    left: 32%;top: 0;
+    width: 900px;
+    height: 300px;
+    background: url('../image/camera.png') no-repeat;
+    animation: camera 2s;
+}
+.cameraBG {
+    position: absolute;
+    left: 32%; top: 0;
+    width: 900px;
+    height: 300px;
+    background: url('../image/cameraBG.png') no-repeat;
+    animation: camera 2s;
+    z-index: 10;
+}
+@keyframes camera {
+    0%{top: -100px;}
+    100% {top: 0;}
+}
+.profile {
+    position: absolute;
+    top: -1000px;
+    width: 475px;
+    height: 548px;
+    background: url('../image/profile.png') no-repeat center/contain;
+    animation: profile 3s;
+    animation-delay: 2s;
+    z-index: 9;
+    animation-fill-mode: forwards;
+}
+@keyframes profile {
+    0% {top: -1000px; left: 41%;}
+    50% {top: 300px; left: 41%;}
+    100% {top: 300px; left: 12%;}
+}
+.profile .pic {
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+    /* background-color: #fff; */
+    position: absolute;
+    top: 50px;
+    left: 120px;
+    background: url('../image/pro-pic.jpg')no-repeat center;
+    background-size: 230px;
+}
+.profile .pic:hover {
+    background: url('../image/pro-pic-hover.png')no-repeat center;
+}
+.profile p {
+    font-family: 'G-medium';
+    position: absolute;
+    bottom: 200px; left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 24px;
+}
+.profile span {
+    font-family: 'G-medium';
+    position: absolute;
+    bottom: 160px; left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-size: 20px;
+}
+.skill {
+    position: absolute;
+    top: -1000px;
+    width: 475px;
+    height: 548px;
+    background: url('../image/skill.png') no-repeat center/contain;
+    animation: skill 3s;
+    animation-delay: 4s;
+    z-index: 9;
+    animation-fill-mode: forwards;
+}
+@keyframes skill {
+    0% {top: -1000px; left: 41%;}
+    50% {top: 300px; left: 41%;}
+    100% {top: 300px; left: 41%;}
+}
+.progress-area {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    margin: 90px 50px;
+}
+.progress-area .progress {
+    flex-basis: 40%;
+    margin-bottom: 5em;
+}
+.progress-area .progress p {
+    margin-bottom: 1em;
+    color: #fff;
+}
+.progress-area .progressbar-text {
+    left: 90% !important;
+    top: 10% !important;
+}
+.certificate {
+    position: absolute;
+    top: -1000px;
+    width: 475px;
+    height: 548px;
+    background: url('../image/certificate.png') no-repeat center/contain;
+    animation: certificate 3s;
+    animation-delay: 6s;
+    z-index: 9;
+    animation-fill-mode: forwards;
+}
+@keyframes certificate {
+    0% {top: -1000px; left: 41%;}
+    50% {top: 300px; left: 41%;}
+    100% {top: 300px; left: 70%;}
+}
+.certificate .cer-title {
+    font-family: 'G-bold';
+    padding: 30px 50px 0;
+    font-size: 20px;
+    line-height: 2;
+    color: #fff;
+}
+.certificate .cer-txt {
+    font-family: 'G-light';
+    font-size: 18px;
+    line-height: 1.5;
+}
+
+@media screen and (max-width: 1683px) {
+    .profile {
+        width: 400px;
+        height: 600px;
+    }
+    .profile .pic {
+        width: 160px;
+        height: 160px;
+        top: 130px;
+        background-size: cover;
+    }
+    .profile p {
+        bottom: 240px;
+    }
+    .profile span {
+        bottom: 200px;
+    }
+    .skill {
+        width: 400px;
+        height: 600px;
+    }
+    .progress-area {
+        margin: 110px 50px;
+    }
+    .certificate {
+        width: 400px;
+        height: 600px;
+        padding-top: 60px;
+    }
+    .certificate .cer-txt {
+        font-size: 15px;
+    }
+}

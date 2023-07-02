@@ -1,0 +1,267 @@
+@charset 'utf-8';
+@font-face {
+    font-family: 'Mont-Bold';
+    src: url(../font/Montserrat-ExtraBold.ttf);
+}
+@font-face {
+    font-family: 'Mont-Re';
+    src: url(../font/Montserrat-Regular.ttf);
+}
+@font-face {
+    font-family: 'Nanum-Bold';
+    src: url(../font/NanumSquareNeo-cBd.ttf);
+}
+@font-face {
+    font-family: 'Nanum-Re';
+    src: url(../font/Montserrat-Regular.ttf);
+}
+* {margin: 0; padding: 0; box-sizing: border-box;}
+li {list-style: none;}
+a { text-decoration: none; color: inherit;}
+img {vertical-align: top;}
+.wrap {
+    max-width: 390px;
+    margin: 0 auto;
+}
+.inner {
+    width: 390px;
+}
+/* header */
+header {
+    width: 100%;
+    height: 80px;
+    position: fixed;
+    z-index: 9;
+}
+header .inner {
+    background-color: black;
+    height: 80px;
+}
+header .m-header {
+    width: 90%;
+    height: 100%;
+    margin: 0 auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+header .logo {
+    font-family: 'Mont-Bold';
+    display: inline-block;
+    color: #fff;
+    font-weight: 700;
+    font-size: 35px; 
+}
+nav {
+    position: fixed;
+    color: #fff;
+    width: 390px;
+    height: 100%;
+    background-color: #282d38;
+    display: none;
+}
+li.depth1 {
+    background-color: #9ba3b5;
+}
+li.depth1 a {
+    display: block;
+    padding: 20px 35px;
+    font-size: 20px;
+    color: #fff;
+}
+ul.depth2 {
+    padding: 10px 40px;
+    background-color: #f5f8ff;
+    display: none;
+}
+ul.depth2 > li > a {
+    display: block;
+    font-size: 16px;
+    padding: 8px 10px;
+    color: #222;
+}
+.menubtn {
+    display: inline-block;
+    width: 55px;
+    height: 55px;
+    background: url('../images/BMW_White_Logo.svg') no-repeat;
+    margin-right: 10px;
+    transition: all .5s;
+}
+.menubtn.on{
+    rotate: 360deg;
+}
+/* main */
+main {
+    width: 100%;
+}
+main .inner {
+    background-color: #000819;
+    height: 1250px;
+    padding-top: 80px;
+}
+main .inner .banner {
+    width: 390px;
+    height: 180px;
+}
+main .inner .banner .slide {
+    position: relative;
+}
+main .inner .banner .slidebanner {
+    position: absolute;
+}
+main .inner .banner .slidebanner h2 {
+    position: absolute;
+    top: 10px;
+    left: 50%;
+    transform: translateX(-50%);
+    color: #fff;
+    font-family: 'Mont-Bold';
+    font-size: 20px;
+    text-align: center;
+}
+main .inner .banner img {
+    width: 390px;
+}
+main .inner .find {
+    width: 90%;
+    height: 430px;
+    margin: 0 auto;
+}
+main .inner .find h2 {
+    font-family: 'Mont-Bold';
+    color: #dbdbdb;
+    padding: 10px;
+}
+main .inner .find h3 {
+    font-family: 'Mont-Re';
+    color: rgb(232, 139, 139);
+    font-size: 16px;
+    padding-bottom: 3px;
+}
+main .inner .find  p {
+    font-family: 'Nanum-Bold';
+    color: #e9e9e9;
+    font-size: 13px;
+    line-height: 1.4;
+    letter-spacing: 1.1px;
+}
+main .inner .find .app1 {
+    background: url('../images/my_BMW.webp') no-repeat center left/contain;
+    height: 100px;
+    padding-left: 120px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+main .inner .find .app2 {
+    background: url('../images/BMW_PLUS.webp') no-repeat center left/contain;
+    height: 100px;
+    padding-left: 120px;
+    margin-bottom: 30px;
+    cursor: pointer;
+}
+main .inner .find .app3 {
+    background: url('../images/BMW_Vantage.webp') no-repeat center left/contain;
+    height: 100px;
+    padding-left: 120px;
+    cursor: pointer;
+}
+main .inner .search {
+    width: 90%;
+    margin: 0 auto;
+}
+main .inner .search h2 {
+    font-family: 'Mont-Bold';
+    color: #dbdbdb;
+    padding: 10px;
+}
+main .inner .search iframe {
+    width: 100%;
+    height: 200px;
+}
+main .inner .search h3 {
+    font-family: 'Nanum-Bold';
+    padding: 10px;
+    font-size: 16px;
+    color: #f5f8ff;
+}
+main .inner .search select {
+    width: 100%;
+    padding: 5px;
+    font-family: 'Nanum-Bold';
+    margin-bottom: 20px;
+}
+main .inner .search .center-name h3 {
+    font-family: 'Nanum-Bold';
+    padding: 10px;
+    font-size: 16px;
+    color: #f5f8ff;
+}
+main .inner .search .center-name .namelist {
+    font-family: 'Nanum-Re';
+    height: 100px;
+    overflow-y: auto;
+    background: #fff;
+    padding: 3px;
+}
+main .inner .search .center-name .namelist p {
+    font-family: 'Nanum-Re';
+    line-height: 20px;
+    padding-bottom: 5px;
+    font-size: 14px;
+}
+
+footer {
+    width: 100%;
+    margin: 0 auto;
+    background-color: rgb(48, 51, 53);
+}
+footer .inner {
+    width: 90%;
+    height: 200px;
+    margin: 0 auto;
+}
+footer .inner .tab {
+    padding-top: 20px;
+    display: flex;
+}
+footer .inner .tab .footergnb {
+    padding: 10px 10px 10px 0;
+    width: 40%;
+}
+footer .inner .tab .footergnb > li {
+    width: 100%;
+    padding: 5px;
+    background: #7c7f86;
+    font-size: 13px;
+    text-align: center;
+    color: #fff;
+}
+footer .inner .tab .footergnb li.on {
+    background: #000819;
+}
+footer .inner .tab .tabitem > * {
+    height: 150px;
+    padding-top: 15px;    
+    font-size: 13px;
+    color: #fff;
+}
+footer .inner .tab .tabitem li > a {
+    line-height: 25px;
+}
+footer .inner .tab .footersub1 {}
+footer .inner .tab .footersub2 {
+    display: none;
+}
+footer .inner .tab .footersub3 {
+    display: none;
+}
+footer .inner .tab .footersub4 {
+    display: none;
+}
+footer .inner .tab .footersub5 {
+    display: none;
+}
+footer .inner .tab .footersub5 img {
+    width: 30px;
+}

@@ -1,0 +1,425 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BMW 코리아</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- jquery cdn -->
+    <script src="https://code.jquery.com/jquery-3.6.3.min.js" integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
+    <!-- fullpage library -->
+    <!-- fullpage.js 접속해서 github -> 84 releases -> 2.9.7 다운로드 (파일 압축푼 후 dist에 css와 js 가져오기) -->
+    <link rel="stylesheet" type="text/css" href="css/jquery.fullpage.min.css"/>
+    <!-- bx slide -->
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
+    <!-- <script src="vendors/easings.min.js"></script> -->
+    <script type="text/javascript" src="js/jquery.fullpage.min.js"></script>
+    <link rel="stylesheet" href="css/style.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <header>
+        <div class="logo">
+            <strong>BMW</strong>
+        </div>
+        <nav>
+            <ul class="depth1">
+                <!-- a태그 #부분   =   ↓(anchor부분) -->
+                <li data-menuanchor="page1">
+                    <a href="#page1">Models</a>
+                    <ul class="depth2">
+                        <li><a href="#">시리즈별</a></li>
+                        <li><a href="#">차량유형별</a></li>
+                    </ul>
+                </li>
+                <li data-menuanchor="page2">
+                    <a href="#page2">Find & Buy</a>
+                    <ul class="depth2">
+                        <li><a href="#">내 차량 찾기</a></li>
+                        <li><a href="#">BMW 공식 인증 중고차</a></li>
+                        <li><a href="#">법인판매/스페셜 세일즈</a></li>
+                        <li><a href="#">트레이드인/로열티 프로그램</a></li>
+                    </ul>
+                </li>
+                <li data-menuanchor="page3">
+                    <a href="#page3">About BMW</a>
+                    <ul class="depth2">
+                        <li><a href="#">기업 소개</a></li>
+                        <li><a href="#">BMW 뉴스</a></li>
+                        <li><a href="#">BMW i</a></li>
+                        <li><a href="#">BMW M</a></li>
+                        <li><a href="#">BMW X RANGE</a></li>
+                        <li><a href="#">BMW 캠페인</a></li>
+                    </ul>
+                </li>
+                <li data-menuanchor="page4">
+                    <a href="#page4">Discover</a>
+                    <ul class="depth2">
+                        <li><a href="#">BMW APPS</a></li>
+                        <li><a href="#">BMW 샵 온라인</a></li>
+                        <li><a href="#">BMW 커넥티드 드라이브 스토어</a></li>
+                        <li><a href="#">BMW 골프 스포츠</a></li>
+                        <li><a href="#">BMW 엑설런스 클럽</a></li>
+                        <li><a href="#">BMW 컨셉카</a></li>
+                    </ul>
+                </li>
+                <li data-menuanchor="page5">
+                    <a href="#page5">services</a>
+                    <ul class="depth2">
+                        <li><a href="#">BMW 서비스</a></li>
+                        <li><a href="#">BMW 오리지널 부품 & 리콜 정보</a></li>
+                        <li><a href="#">BMW 오리지널 액세서리</a></li>
+                        <li><a href="#">BMW 커넥티드 드라이브</a></li>
+                        <li><a href="#">리모트 소프트 웨어 업그레이드</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </nav>
+        <div class="icon">
+            <a href="#"><img src="image/header-icon1.png" alt="검색"></a>
+            <a href="#"> <img src="image/header-icon2.png" alt="로그인"></a>
+            <a href="#"><img src="image/header-icon3.png" alt="장바구니"></a>
+        </div>
+        <div class="rotate-logo">
+            <img src="image/BMW_White_Logo.svg" alt="로고">
+        </div>
+        <div class="quickmenu">
+            <div class="quick">
+                <a href="#">
+                <img src="image/quick1.png" alt="시승신청">
+                <p>시승신청</p>
+                <span></span>
+                </a>
+            </div>
+            <div class="quick">
+                <a href="#">
+                <img src="image/quick2.png" alt="견적내기">
+                <p>견적내기</p>
+                <span></span>
+                </a>
+            </div>
+            <div class="quick">
+                <a href="#">
+                <img src="image/quick3.png" alt="정비예약">
+                <p>정비예약</p>
+                <span></span>
+                </a>
+            </div>
+            <div class="quick">
+                <a href="#">
+                <img src="image/quick4.png" alt="매장검색">
+                <p>매장검색</p>
+                <span></span>
+                </a>
+            </div>
+            <div class="quick">
+                <a href="#">
+                <img src="image/quick5.png" alt="구매상담">
+                <p>구매상담</p>
+                </a>
+            </div>
+        </div>
+    </header>
+    <main id="fullpage">
+        <section class="section">
+            <div class="black"></div>
+            <video src="image/main....mp4" autoplay muted loop></video>
+        </section>
+        <section class="section">
+            <div class="banner">
+                <div class="banner1">
+                    <h2>BMW M Driving</h2>
+                </div>
+                <div class="banner2">
+                    <h2>BMW<br>Electromobility</h2>
+                </div>
+            </div>
+        </section>
+        <section class="section linear">
+            <div class="container clear">
+                <h2>시리즈별</h2>
+                <button>더보기</button>
+                <ul class="tabs">
+                    <li class="tab-link current" data-tab="tab-1">8</li>
+                    <li class="tab-link" data-tab="tab-2">7</li>
+                    <li class="tab-link" data-tab="tab-3">6</li>
+                    <li class="tab-link" data-tab="tab-4">5</li>
+                    <li class="tab-link" data-tab="tab-5">4</li>
+                    <li class="tab-link" data-tab="tab-6">3</li>
+                    <li class="tab-link" data-tab="tab-7">2</li>
+                    <li class="tab-link" data-tab="tab-8">1</li>
+                    <li class="tab-link" data-tab="tab-9">i</li>
+                    <li class="tab-link" data-tab="tab-10">x</li>
+                    <li class="tab-link" data-tab="tab-11">z</li>
+                </ul>
+                <div id="tab-1" class="tab-content current">
+                    <a href="#tab-a"><img src="image/8s1.png" alt=""></a>
+                    <a href="#tab-b"><img src="image/8s2.png" alt=""></a>
+                    <a href="#tab-c"><img src="image/8s3.png" alt=""></a>
+                    <a href="#tab-d"><img src="image/8s4.png" alt=""></a>
+                </div>
+                <div id="tab-2" class="tab-content">
+                    <a href="#"><img src="image/7s1.png" alt=""></a>
+                    <a href="#"><img src="image/7s2.png" alt=""></a>
+                </div>
+                <div id="tab-3" class="tab-content">
+                    <a href="#"><img src="image/6s1.png" alt=""></a>
+                </div>
+                <div id="tab-4" class="tab-content">
+                    <a href="#"><img src="image/5s1.png" alt=""></a>
+                    <a href="#"><img src="image/5s2.png" alt=""></a>
+                </div>
+                <div id="tab-5" class="tab-content">
+                    <a href="#"><img src="image/4s1.png" alt=""></a>
+                    <a href="#"><img src="image/4s2.png" alt=""></a>
+                    <a href="#"><img src="image/4s3.png" alt=""></a>
+                    <a href="#"><img src="image/4s4.png" alt=""></a>
+                    <!-- <a href="#"><img src="image/4s5.png" alt=""></a>
+                    <a href="#"><img src="image/4s6.png" alt=""></a>
+                    <a href="#"><img src="image/4s7.png" alt=""></a> -->
+                </div>
+                <div id="tab-6" class="tab-content">
+                    <a href="#"><img src="image/3s1.png" alt=""></a>
+                    <a href="#"><img src="image/3s2.png" alt=""></a>
+                    <a href="#"><img src="image/3s3.png" alt=""></a>
+                </div>
+                <div id="tab-7" class="tab-content">
+                    <a href="#"><img src="image/2s1.png" alt=""></a>
+                    <a href="#"><img src="image/2s2.png" alt=""></a>
+                    <a href="#"><img src="image/2s3.png" alt=""></a>
+                    <a href="#"><img src="image/2s4.png" alt=""></a>
+                </div>
+                <div id="tab-8" class="tab-content">
+                    <a href="#"><img src="image/1s.png" alt=""></a>
+                    <a href="#"><img src="image/4s4.png" alt=""></a>
+                    <a href="#"><img src="image/4s7.png" alt=""></a>
+                    <a href="#"><img src="image/xs19.png" alt=""></a>
+                </div>
+                <div id="tab-9" class="tab-content">
+                    <a href="#"><img src="image/7s2.png" alt=""></a>
+                </div>
+                <div id="tab-10" class="tab-content">
+                    <a href="#"><img src="image/xs1.png" alt=""></a>
+                    <a href="#"><img src="image/xs2.png" alt=""></a>
+                    <a href="#"><img src="image/xs3.png" alt=""></a>
+                    <a href="#"><img src="image/xs4.png" alt=""></a>
+                    <!-- <a href="#"><img src="image/xs5.png" alt=""></a>
+                    <a href="#"><img src="image/xs6.png" alt=""></a>
+                    <a href="#"><img src="image/xs7.png" alt=""></a>
+                    <a href="#"><img src="image/xs8.png" alt=""></a>
+                    <a href="#"><img src="image/xs9.png" alt=""></a>
+                    <a href="#"><img src="image/xs10.png" alt=""></a>
+                    <a href="#"><img src="image/xs11.png" alt=""></a>
+                    <a href="#"><img src="image/xs12.png" alt=""></a>
+                    <a href="#"><img src="image/xs13.png" alt=""></a>
+                    <a href="#"><img src="image/xs14.png" alt=""></a>
+                    <a href="#"><img src="image/xs15.png" alt=""></a>
+                    <a href="#"><img src="image/xs16.png" alt=""></a>
+                    <a href="#"><img src="image/xs17.png" alt=""></a>
+                    <a href="#"><img src="image/xs18.png" alt=""></a>
+                    <a href="#"><img src="image/xs19.png" alt=""></a>
+                    <a href="#"><img src="image/xs20.png" alt=""></a> -->
+                </div>
+                <div id="tab-11" class="tab-content">
+                    <a href="#"><img src="image/z4.png" alt=""></a>
+                </div>
+                <div class="tab-car-details">
+                    <div id="tab-a" class="car-desc">
+                        <div class="tab-car clear">
+                            <img class="text" src="image/tab-click-8s.png" alt="">
+                            <div class="rotate360">
+                                <img class="click" src="image/8s1-click.png" alt="">
+                                <img class="circle" src="image/360.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-b" class="car-desc no">
+                        <div class="tab-car clear">
+                            <img class="text" src="image/tab-click-8s2.png" alt="">
+                            <div class="rotate360">
+                                <img class="click" src="image/8s2-click.png" alt="">
+                                <img class="circle" src="image/360.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-c" class="car-desc no">
+                        <div class="tab-car clear">
+                            <img class="text" src="image/tab-click-8s3.png" alt="">
+                            <div class="rotate360">
+                                <img class="click" src="image/8s3-click.png" alt="">
+                                <img class="circle" src="image/360.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                    <div id="tab-d" class="car-desc no">
+                        <div class="tab-car clear">
+                            <img class="text" src="image/tab-click-8s4.png" alt="">
+                            <div class="rotate360">
+                                <img class="click" src="image/8s4-click.png" alt="">
+                                <img class="circle" src="image/360.png" alt="">
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- <div class="slide">
+                <h3>slide 01</h3>
+            </div>
+            <div class="slide">
+                <h3>slide 02</h3>
+            </div>
+            <div class="slide">
+                <h3>slide 03</h3>
+            </div> -->
+        </section>
+        <section class="section">
+            <div class="find">
+                <div class="bmw-app">
+                    <h2>BMW APP</h2>
+                    <ul>
+                        <li>
+                            <a href="#">
+                                <h3>My BMW</h3>
+                                <img src="image/my_BMW.webp" alt="my_BMW">
+                                <p>나의 BMW 현재 상태를 확인하고<br>다양한 원격기능 이용,
+                                사전 주행까지 계획하기!<br> BMW에 대한 모든 것을 스마트폰에서 경험하세요!</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h3>BMW Plus</h3>
+                                <img src="image/BMW_PLUS.webp" alt="BMW_PLUS">
+                                <p>쉽고 빠른 BMW 서비스 이용하는 방법<br>실시간으로 BMW 서비스를 예약하고 관리하기<br>
+                                서비스부터 관리까지 이용해보세요</p>
+                            </a>
+                        </li>
+                        <li>
+                            <a href="#">
+                                <h3>BMW Vantage</h3>
+                                <img src="image/BMW_Vantage.webp" alt="BMW_Vantage">
+                                <p>BMW 최초의 멤버십 앱 서비스!<br>BMW 고객 전용 coin 혜택과 다양한 제휴사 혜택,<br> 
+                                엔터테인먼트 기능, 회원전용 소식과 이벤트까지 !</p>
+                            </a>
+                        </li>
+                    </ul>
+                </div>
+                <div class="center-search clear">
+                    <div class="inner-search">
+                        <h2>BMW CENTER SEARCH</h2>
+                        <p>
+                            <label for="search">통합검색 </label>
+                            <input type="text" placeholder="주소를 입력하세요">
+                            <input type="submit" value="검색">
+                        </p>
+                        <p>
+                        <label for="select">지역선택</label>
+
+                        <input type="radio" name="area" id="all" value="전체" checked>
+                        <label for="select">전체</label>
+
+                        <input type="radio" name="area" id="seoul" value="서울">
+                        <label for="select">서울</label>
+
+                        <input type="radio" name="area" id="gyeonggi" value="경기">
+                        <label for="select">경기/인천</label>
+
+                        <input type="radio" name="area" id="chungcheong" value="충청">
+                        <label for="select">충청/세종/대전/강원</label>
+
+                        <input type="radio" name="area" id="jeolla" value="전라">
+                        <label for="select">전라/광주</label>
+
+                        <input type="radio" name="area" id="daegu" value="대구">
+                        <label for="select">경상/대구/부산/울산</label>
+
+                        <input type="radio" name="area" id="jaeju" value="제주">
+                        <label for="select">제주</label>
+                        </p>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3234.359143768526!2d128.6104943354453!3d35.840196199999994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e2545f502617%3A0x6f2226ee84adfa4!2zQk1X7L2U7Jik66Gx66qo7YSw7IqkIOyImOyEseyEnOu5hOyKpOyEvO2EsA!5e0!3m2!1sko!2skr!4v1678104227350!5m2!1sko!2skr" width="500" height="440" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <div class="information">
+                            <div class="center-name">
+                                <h3>서비스센터</h3>
+                                <div class="namelist">
+                                    <p>강남역 서비스 센터 (코오롱 모터스)</p>
+                                    <p>강북 서비스 센터 (한독 모터스)</p>
+                                    <p>강서 서비스 센터 (바바리안 모터스)</p>
+                                    <p>교대 서비스 센터 (코오롱 모터스)</p>
+                                    <p>대치 서비스 센터 (코오롱 모터스)</p>
+                                    <p>도곡 패스트레인 서비스 센터 (도이치 모터스)</p>
+                                    <p>동대문 서비스 센터(도이치 모터스)</p>
+                                    <p>방배 서비스 센터 (한독 모터스)</p>
+                                    <p>서초 중앙 서비스 센터 (한독 모터스)</p>
+                                    <p>서초 패스트레인 서비스 센터 (한독 모터스)</p>
+                                    <p>성산 서비스 센터 (코오롱 모터스)</p>
+                                    <p>성수 서비스 센터 (도이치 모터스)</p>
+                                    <p>송파 서비스 센터 (도이치 모터스)</p>
+                                    <p>양재 서비스 센터 (도이치 모터스)</p>
+                                </div>
+                            </div>
+                            <div class="center-infor">
+                                <h3>서비스센터정보</h3>
+                                <div class="inforlist">
+                                    <p>전화번호 02-086-3331</p>
+                                    <p>주소 서울특별시 서초구 서초대로 71길 10</p>
+                                    <p>영업시간 평일 9시 - 18시 (토요일 : 9시 -13시, 일요일 휴무)</p>
+                                    <p>홈페이지 바로가기 http://www.kolonmotors.com/</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <footer class="section fp-auto-height">
+            <ul class="footergnb">
+                <li>BMW 코리아
+                    <ul class="footersub">
+                        <li><a href="#">인재 채용</a></li>
+                        <li><a href="#">BMW 컨택트</a></li>
+                        <li><a href="#">시스템 설정</a></li>
+                        <li><a href="#">소프트웨어 다운로드</a></li>
+                        <li><a href="#">BMW 모든 웹 사이트</a></li>
+                    </ul>
+                </li>
+                <li>공지사항
+                    <ul class="footersub">
+                        <li><a href="#">외부감사인 변경선임 공고</a></li>
+                        <li><a href="#">BMW '개인정보처리방침 변경 안내</a></li>
+                        <li><a href="#">커넥티드 드라이브 이용약관 개정 안내</a></li>
+                    </ul>
+                </li>
+                <li>법률 약관 정보
+                    <ul class="footersub">
+                        <li><a href="#">법적고지</a></li>
+                        <li><a href="#">쿠키정책</a></li>
+                        <li><a href="#">영상정보처리기기 운영·관리 방침</a></li>
+                        <li><a href="#">커텍티드 드라이브 이용약관</a></li>
+                        <li><a href="#">서비스케어 플러스 이용약관</a></li>
+                    </ul>
+                <li>개인정보처리방침
+                    <ul class="footersub">
+                        <li><a href="#">개인정보처리방침</a></li>
+                        <li><a href="#">커넥티드 드라이브 개인정보 처리방침</a></li>
+                        <li><a href="#">BMW 멤버십 개인정보처리방침</a></li>
+                    </ul>
+                </li>
+                <li>연관채널
+                    <ul class="footersub">
+                        <li>
+                            <a href="#"><img src="image/instargram.png" alt="인스타"></a>
+                            <a href="#"><img src="image/facebook.png" alt="페이스북"></a>
+                            <a href="#"><img src="image/youtube.png" alt="유튜브"></a>
+                            <a href="#"><img src="image/kakaotalk.png" alt="카카오톡"></a>
+                        </li>
+                        <li><a href="#">BMW.com</a></li>
+                        <li><a href="#">BMW 드라이빙센터</a></li>
+                        <li><a href="#">BMW 코리아 미래재단</a></li>
+                        <li><a href="#">파이낸셜 서비스</a></li>
+                    </ul>
+                </li>
+            </ul>
+        </footer>
+    </main>
+</body>
+</html>

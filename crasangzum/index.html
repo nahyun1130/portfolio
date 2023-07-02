@@ -1,0 +1,196 @@
+<!DOCTYPE html>
+<html lang="ko">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>크라상점</title>
+    <link rel="shortcut icon" href="favicon.ico">
+    <!-- jQuery CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js" integrity="sha256-oP6HI9z1XaZNBrJURtCoUT5SUnxFr8s3BzRl+cbzUq8=" crossorigin="anonymous"></script>
+    <!-- swiper -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.css"/>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@9/swiper-bundle.min.js"></script>
+    
+    <!-- gsap CDN 젤 위 하나랑 밑에서 세번째꺼 가져오기 -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/gsap.min.js" integrity="sha512-f8mwTB+Bs8a5c46DEm7HQLcJuHMBaH/UFlcgyetMqqkvTcYg4g5VXsYR71b3qC82lZytjNYvBj2pf0VekA9/FQ==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.11.4/ScrollToPlugin.min.js" integrity="sha512-tQFq+nb/TSS648SDzWbSj0A67t4I1PFzR0U6Oi/yEYFyUbAIwg74SOCbr7t2X1Rn+iln7sYwfh8y+z7p0gddOw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/responsive.css">
+    <script defer src="js/main.js"></script>
+</head>
+<body>
+    <!-- 섹션이동 메뉴 -->
+    <ul class="section-menu">
+        <li><a href="#"><span>Main</span></a></li>
+        <li><a href="#"><span>Crasang</span></a></li>
+        <li><a href="#"><span>Store</span></a></li>
+        <li><a href="#"><span>Call</span></a></li>
+    </ul>
+    <div class="wrap">
+            <!-- header -->
+            <header class="header">
+                <div class="inner clearfix">
+                    <h1 class="logo">
+                        <a href="#"><img src="images/로고.png" alt=""></a>
+                    </h1>
+                    <div class="nav">
+                        <ul>
+                            <li><a href="#">메뉴소개</a></li>
+                            <li><a href="#">이벤트</a></li>
+                            <li><a href="#">매장찾기</a></li>
+                            <li><a href="#">창업문의</a></li>
+                            <li><a href="#">고객의소리</a></li>
+                            <li><a href="#"><img src="images/로그인.png" alt=""></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </header>
+            <!-- visual -->
+            <section class="visual">
+                <div class="inner">
+                    <div class="topimg"></div>
+                    <h1>크라상점</h1>
+                    <div class="house">
+                        <div class="minibn">
+                            <div class="swmini">
+                                <div class="swiper-wrapper">
+                                    <div class="swiper-slide"><img src="images/미니배너1.png" alt="미니배너1"></div>
+                                    <div class="swiper-slide"><img src="images/미니배너2.png" alt="미니배너2"></div>
+                                    <div class="swiper-slide"><img src="images/미니배너3.png" alt="미니배너3"></div>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="box">
+                            <a href="#">월간크라상</a>
+                            <a href="#">EVENT&STORE</a>
+                            <a href="#">가맹문의</a>
+                        </div>
+                        <div class="open"></div>
+                    </div>
+                </div>
+            </section>
+            <!-- crasang -->
+            <section class="crasang">
+                <div class="inner clearfix">
+                    <div class="crasang-txt">
+                        <h2>월간 크라상은?</h2>
+                        <p>아이부터 어른까지 남녀노소 할 것 없이<br>누구나 좋아하고 맛있는 크라상점은<br>새로운 맛을 연구하고 다양한 메뉴를  선보입니다.</p>
+                        <button>다양한 크라상 보러가기</button>
+                    </div>
+                    <div class="crasanglist">
+                        <div class="crasang-choco line">
+                            <a href="#">
+                                <img src="images/초코츄러스.png" alt="초코츄러스" class="rotateimg">
+                                <h3 class="cra-title">초코츄러스</h3>
+                                <p class="cra-p">크라상 위에 듬뿍 발린 초코,<br>그리고 시나몬 슈가 솔솔</p>
+                            </a>
+                        </div>
+                        <div class="crasang-berry line">
+                            <a href="#">
+                                <img src="images/누네딸기.png" alt="누네딸기" class="rotateimg">
+                                <h3 class="cra-title">누네딸기</h3>
+                                <p class="cra-p">바삭한 크라상에<br>촉촉함을 가득 채운 딸기잼이 듬뿍</p>
+                            </a>
+                        </div>
+                        <div class="crasang-cream line">
+                            <a href="#">
+                                <img src="images/비스킷크림.png" alt="비스킷크림" class="rotateimg">
+                                <h3 class="cra-title">비스킷크림</h3>
+                                <p class="cra-p">크로와상의 바삭함을 더한 비스킷과<br>슈크림의 환상의 조화</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- store -->
+            <section class="store">
+                <div class="inner clearfix">
+                    <div class="event sw-store">
+                        <h2>EVENT</h2>
+                        <div class="swiper-wrapper">
+                            <div class="swiper-slide"><a href="#"><img src="images/banner1.png" alt="#"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/banner2.png" alt="#"></a></div>
+                            <div class="swiper-slide"><a href="#"><img src="images/banner3.png" alt="#"></a></div>
+                        </div>
+                        <div class="sw-pg"></div>
+                    </div>
+                    <div class="find">
+                        <h2>STORE</h2>
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3233.1887295819392!2d128.59399651526397!3d35.868891580150965!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3565e3c465b7e7ad%3A0x236eee1d4613480a!2z7YGs65287IOB7KCQ!5e0!3m2!1sko!2skr!4v1679982172485!5m2!1sko!2skr" width="650" height="650" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                        <h3>내주변에 가장 가까운<br>크라상점을 찾아보세요!</h3>
+                        <form action="">
+                            <input type="text" placeholder="주소를 입력하세요" class="input-text">
+                            <input type="button" value="검색" class="input-btn">
+                        </form>
+                        <div class="addr">
+                            <img src="images/위치.png" alt="지점">
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- call -->
+            <section class="call">
+                <div class="inner">
+                    <div class="call-txt">
+                        <h2>크라상점 가맹문의</h2>
+                        <button>1522-2250</button>
+                        <p>크로와상 + 上(윗 상) + 店(가게 점) =<b>크루아상 중 가장 으뜸인 가게</b>라는 의미의 크라상점은<br><b>전국 100여개의 점포를 운영하고 있는 국내 크루아상 베이커리</b> 전문 브랜드입니다.</p>
+                    </div>
+                    <div class="call-box">
+                        <div class="start-up-1">
+                            <a href="#">
+                                <span></span><span></span><span></span><span></span>
+                                <img src="images/창업조건.png" alt="창업조건">
+                                <h3>창업조건 및 절차</h3>
+                                <p>입지분석 및 시장조사를 통한 꼼꼼한 검토 후<br>본사에서 이론과 실습 교육을 이수하고<br>창업 계약을 도와드립니다.</p>
+                            </a>
+                        </div>
+                        <div class="start-up-2">
+                            <a href="#">
+                                <span></span><span></span><span></span><span></span>
+                                <img src="images/점포개설문의.png" alt="점포개설문의">
+                                <h3>점포개설문의</h3>
+                                <p>안정적인 수익과 점포 관리가 용이한<br>가맹점 창업을 준비하십니까?<br>크라상점이 여러분의 성공적인 창업을 도와드립니다.</p>
+                            </a>
+                        </div>
+                        <div class="start-up-3">
+                            <a href="#">
+                                <span></span><span></span><span></span><span></span>
+                                <img src="images/창업교육.png" alt="창업교육">
+                                <h3>창업교육</h3>
+                                <p>크라상점만의 경험과 노하우로<br> 메뉴얼, 레시피, 서비스 등 체계화된 교육을<br>진행해 드리고 자문 해드립니다.</p>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <!-- footer -->
+            <footer class="footer">
+                <div class="inner">
+                    <div class="footerwrap">
+                        <h1 class="footerlogo">크라상점</h1>
+                        <div class="footermenu">
+                                <div class="footermenu1">
+                                    <p>사업자 등록번호 : 453-81-01371</p>
+                                    <p>(주)에이브로</p>
+                                    <p>대표이사 : 김상동 / 이원혁</p>
+                                </div>
+                                <div class="footermenu1">
+                                    <p>대표번호 : 1522-2250</p>
+                                    <p>FAX : 053-767-9913</p>
+                                    <p>E-mail : abro01@naver.com</p>
+                                </div>
+                                <div class="footermenu1">
+                                    <p>대구광역시 두류공원로 69-1, 4층</p>
+                                    <p class="copy">copyright&copy;2019.크라상점.All right reserved.</p>
+                                </div>
+                        </div>
+                    </div>
+                </div>
+            </footer>
+    </div>
+</body>
+</html>

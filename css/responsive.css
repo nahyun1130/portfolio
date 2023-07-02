@@ -1,0 +1,263 @@
+@media screen and (max-width: 1880px) {
+    main {
+        overflow: hidden;
+    }
+    .vendingbg .vendingitem {
+        top: 105px;
+        height: 330px;
+    }
+    .vendingbg .vendingcash {
+        top: 448px;
+        height: 78px;
+    }
+    .vendingitem .items {
+        height: 331px;
+        left: 123px;
+    }
+    .vendingbg .vendingpf a {
+        top: 454px;
+        left: 113px;
+        width: 292px;
+        height: 65px;
+    }
+    .vendingbg .vendingposter .poster1 {
+        bottom: 0px;
+        left: 109px;
+    }
+    .vendingbg .vendingposter .poster2 {
+        bottom: -45px;
+        left: 239px;
+    }
+    .vendingbg .vendingposter .poster3 {
+        bottom: 13px;
+        right: 76px;
+    }
+    
+}
+@media screen and (max-width: 700px) {
+    .inner {
+        width: 97%;
+    }
+    header img {
+        height: 55px;
+        margin: 20px;
+    }
+    .heart {
+        display: none;
+    }
+    main .vendingms {
+        width: 100%;
+    }
+    .vendingbg .vendingitem {
+        width: 95%;
+        height: 41%;
+        left: 3%;
+        top: 25%;
+    }
+    .vendingitem .items {
+        width: 75%;
+        height: 99%;
+        left: 13%;
+    }
+    .vendingitem .items >* {
+        width: 100px;
+        height: 90px;
+    }
+    .vendingbg .vendingcash {
+        width: 72%;
+        height: 12%;
+        left: 14%;
+        top: 70%;
+    }
+    .vendingbg .vendingpf a {
+        top: 72%;
+        left: 17%;
+        width: 40%;
+        height: 65px;
+        font-size: 30px;
+        line-height: 30px;
+        text-align: center;
+    }
+    .vendingbg .vendingposter .poster1 {
+        font-family: 'Inkfree';
+        top: -60px;
+        left: 30%;
+        background: none;
+        font-size: 25px;
+        text-indent: 0;
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #9c0f0f;
+        color: #fff;
+        border-radius: 20px;
+    }
+    .vendingbg .vendingposter .poster1:hover {
+        background-color: #fff;
+        color: #550000;
+        box-shadow: 0 0 3vw #F40A35;
+    }
+    .vendingbg .vendingposter .poster2 {
+        font-family: 'Inkfree';
+        top: -60px;
+        left: 55%;
+        background: none;
+        font-size: 25px;
+        text-indent: 0;
+        width: 130px;
+        height: 40px;
+        text-align: center;
+        line-height: 40px;
+        background-color: #9c0f0f;
+        color: #fff;
+        border-radius: 20px;
+        transform: scale(1);
+    }
+    .vendingbg .vendingposter .poster2:hover {
+        background-color: #fff;
+        color: #550000;
+        box-shadow: 0 0 3vw #F40A35;
+        transform: scale(1.1);
+    }
+    .vendingbg .vendingposter .poster3 {
+        display: none;
+    }
+}
+@media screen and (max-width: 611px) {
+    .vendingitem .items >* {
+        width: 90px;
+    }
+}
+@media screen and (max-width: 555px) {
+    main .vendingms .vendingbg {
+        width: 95%;
+        margin: 0 auto;
+    }
+    .vendingbg .vendingitem{
+        background: white;
+        top: 30%;
+        left: 2.5%;
+        height: 32%;
+        border-radius: 20px;
+        overflow: hidden;
+    }
+    .vendingitem .items {
+        display: none;
+    }
+    .vendingitem .slideitem {
+        width: 100%;
+        height: 200px;
+        padding-left: 2%;  
+    }
+    .vendingitem .slideitem >* {
+        display: inline-block;
+        width: 44%;
+        height: 200px;
+        background-size: contain;
+        margin: 50px 10px 30px;
+    }
+    .vendingitem .slideitem .slides1 {
+        background: url('../image/slide1.png')no-repeat;
+        background-size: contain;
+        opacity: 1;
+    }
+    .vendingitem .slideitem .slides2 {
+        background: url('../image/slide2.png')no-repeat;
+        background-size: contain;
+        opacity: 1;
+    }
+    .vendingitem .slideitem .slides3 {
+        background: url('../image/slide3.png')no-repeat;
+        background-size: contain;
+        opacity: 1;
+    }
+    .vendingitem .slideitem .slides4 {
+        background: url('../image/slide4.png')no-repeat;
+        background-size: contain;
+        opacity: 1;
+    }
+    .vendingitem .slideitem .slides5 {
+        background: url('../image/slide5.png')no-repeat;
+        background-size: contain;
+        opacity: 1;
+    }
+    .vendingitem .slideitem .slides6 {
+        background: url('../image/slide6.png')no-repeat;
+        background-size: contain;
+        opacity: 1;
+    }
+    .vendingitem .slideitem .slides7 {
+        background: url('../image/slide7.png')no-repeat;
+        background-size: contain;
+        opacity: 1;
+    }
+    .vendingitem .slideitem .slides8 {
+        background: url('../image/slide8.png')no-repeat;
+        background-size: contain;
+        opacity: 1;
+    }
+    .vendingbg .vendingcash {
+        width: 90%;
+        left: 5%;
+    }
+    .vendingbg .vendingpf a{
+        left: 14%;
+        width: 45%;
+    }
+    .vendingbg .vendingposter .poster1 {
+        left: 38%;
+    }
+    .vendingbg .vendingposter .poster2 {
+        left: 38%;
+        top: 0;
+    }
+}
+@media screen and (max-width: 490px) {
+    main .vendingms .vendingbg {
+        width: 100%;
+    }
+    .vendingbg .vendingposter .poster1 {
+        top: -10px; left: 34%;
+    }
+    .vendingbg .vendingposter .poster2 {
+        top: 55px; left: 34%;
+    }
+    .vendingbg .vendingitem {
+        top: 38%;
+    }
+    .vendingbg .vendingpf a {
+        left: 9%;
+        width: 50%;
+    }
+}
+@media screen and (max-width: 420px) {
+    .vendingitem .slideitem >* {
+        width: 66%;
+        margin-left: 60px;
+        margin-top: 30px;
+    }
+    .vendingbg .vendingposter .poster1 {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 26px;
+        top: 0; left: 31%;
+    }
+    .vendingbg .vendingposter .poster2 {
+        width: 150px;
+        height: 50px;
+        line-height: 50px;
+        font-size: 26px;
+        top: 80px; left: 31%;
+    }
+    main .vendingms .vendingbg {
+        height: 97%;
+    }
+    .vendingbg .vendingpf a {
+        font-size: 24px;
+        border: 4px solid #fff;
+        line-height: 29px;
+        height: 56px;
+    }
+}
